@@ -60,13 +60,16 @@ public class Main {
                 Empleado e1 = new Empleado("yuli", 1, 700000, "empleado");
                 Empleado e2 = new Empleado("juan", 2, 800000, "empleado");
                 Empleado e3 = new Empleado("ceci", 3, 900000, "empleado");
+                Empleado e4 = new Empleado("diego", 5, 900000, "empleado");
+                
 
                 //insertando empleado
                 arbolEmpleados.insertar(e1);
                 arbolEmpleados.insertar(e2);
                 arbolEmpleados.insertar(e3);
+                arbolEmpleados.insertar(e4);
                 
-                 addEmpleado(empleados, e1,e2,e3);
+                 addEmpleado(empleados, e1,e2,e3, e4);
                 break;              
             case 3:
                    System.out.println("Mostrando Empleados ordenados por codigo");
@@ -74,8 +77,7 @@ public class Main {
                 break;
             case 4:
                  int horasTrabajadas;
-                float  pagoPorHora;
-
+                 float  pagoPorHora;
                  for (Empleado e : empleados) {
                      System.out.println("\n Empleado "+ e.getNombre());
                      System.out.print(" Registre las horas trabajadas: ");
